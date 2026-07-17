@@ -38,4 +38,4 @@ src/
   types/        TypeScript definitions
 ```
 
-See [`src/CLAUDE.md`](src/CLAUDE.md) for development conventions, branching strategy, and commit message guidelines.
+See [`src/AGENTS.md`](src/AGENTS.md) for development conventions, branching strategy, and commit message guidelines.
