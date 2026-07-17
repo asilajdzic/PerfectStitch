@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ShoppingCartPage from "./pages/ShoppingCartPage";
+import AuthPage from "./pages/AuthPage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/cart" element={<ShoppingCartPage />} />
+            <Route path="/auth" element={<AuthPage />} />
           </Routes>
         </main>
         <Footer />

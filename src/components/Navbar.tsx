@@ -5,6 +5,7 @@ const navLinks = [
   { to: "/", label: "Home", end: true, showIcon: false },
   { to: "/about", label: "About", end: false, showIcon: false },
   { to: "/cart", label: "Cart", end: true, showIcon: true },
+  { to: "/auth", label: "Sign in", end: true, showIcon: false },
 ] as const;
 
 const CartIcon = ({ className }: { className?: string }) => (
