@@ -6,6 +6,39 @@ This document defines the coding standards, project structure, and development w
 
 ---
 
+## Project Rules
+
+### Philosophy
+
+These rules exist to ensure that every feature we build is consistent, accessible, and easy to maintain. They capture lessons learned from comparing vague vs. precise prompts and are meant to reduce review effort while improving overall quality. Following them helps us deliver production-ready code faster and with fewer surprises.
+
+### Prompting
+
+- Always provide explicit constraints, style references, and expected behaviors in prompts.
+- Avoid vague instructions — clarity up front reduces rework and ensures code matches project standards.
+
+### Verification
+
+- Every new feature must include a verification step such as automated tests or lint checks.
+- Tests should cover edge cases (empty inputs, invalid formats, error scenarios) before code is considered complete.
+
+### Accessibility
+
+- Accessibility is part of the acceptance criteria, not optional.
+- Disabled states, clear visual feedback, and consistent styling must be implemented for all interactive elements.
+
+### Integration Readiness
+
+- Even if the backend is not yet available, structure calls with `async/await` to prepare for smooth integration later.
+- Stub or mock backend calls where necessary to keep the frontend testable.
+
+### Review Efficiency
+
+- Code should be delivered in a state that minimizes review burden.
+- Precise prompts, consistent styling, and automated checks shift review effort from fixing basics to refining details.
+
+---
+
 ## Tech Stack
 
 - React 18
@@ -241,4 +274,3 @@ BREAKING CHANGE: `/cart` now requires authentication
 - Reuse components whenever possible.
 - Maintain consistency throughout the codebase.
 - Prioritize type safety and predictable behavior.
-```
